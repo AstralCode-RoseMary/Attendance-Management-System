@@ -1,0 +1,43 @@
+<!--&lt;!&ndash; about.html &ndash;&gt;-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Home</title>-->
+<!--    &lt;!&ndash; Add any CSS or external libraries here &ndash;&gt;-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div class="container">-->
+<!--        <h1>About</h1>-->
+
+<!--        &lt;!&ndash; Your content for the About page &ndash;&gt;-->
+
+<!--        &lt;!&ndash; Logout button &ndash;&gt;-->
+<!--        <a href="{% url 'logout' %}" class="btn btn-primary">Logout</a>-->
+<!--    </div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = '{% url 'home' %}';
+            }, 1000); // Redirect after 1 second
+        }
+    </script>
+</body>
+</html>
+
+
+

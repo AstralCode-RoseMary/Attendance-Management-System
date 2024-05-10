@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flat Able - Premium Admin Template by Phoenixcoded</title>
+    <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 11]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- [ auth-signup ] start -->
+<!--<div class="auth-wrapper">-->
+
+    <div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="form-item">
+            <div class="card borderless">
+                <div class="card-body">
+                    <img src="static/images/logo3.png" alt="" class="img-fluid mb-4">
+                   <b></b> <h4 class="text-center mb-4">SIGNUP</h4></b>
+                        <hr>
+
+                        <form method="POST" action="{% url 'signup' %}">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="fullname" class="col-sm-4 col-form-label">Full Name</label>
+                                        <div class="col-la-8">
+                                            <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Full Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="per_address" class="col-sm-4 col-form-label">Permanent Address</label>
+                                        <div class="col-la-8">
+                                            <input type="text" class="form-control" id="per_address" name="per_address" placeholder="Enter your permanent address" required>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="cur_address" class="col-sm-4 col-form-label">Current Address</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="cur_address" name="cur_address" placeholder="Enter your current address" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="phone" class="col-sm-4 col-form-label">Phone</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-sm-4 col-form-label">Email Address</label>
+                                        <div class="col-sm-8">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email address" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="dob" class="col-sm-4 col-form-label">Date of Birth</label>
+                                        <div class="col-sm-8">
+                                            <input type="date" class="form-control" id="dob" name="dob" placeholder="Enter your date of birth" required>
+                                        </div>
+                                    </div>
+                                    <!-- Add other form fields for the first column here -->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="department" class="col-sm-4 col-form-label">Department</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="department" name="department" placeholder="Enter your department" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="seating_location" class="col-sm-4 col-form-label">Seating Location</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="seating_location" name="seating_location" placeholder="Enter your seating location" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="date_of_join" class="col-sm-4 col-form-label">Date of Join</label>
+                                        <div class="col-sm-8">
+                                            <input type="date" class="form-control" id="date_of_join" name="date_of_join" placeholder="Enter your date of join" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="date_of_confirmation" class="col-sm-4 col-form-label">Date of Confirmation</label>
+                                        <div class="col-sm-8">
+                                            <input type="date" class="form-control" id="date_of_confirmation" name="date_of_confirmation" placeholder="Enter your date of confirmation" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="employee_status" class="col-sm-4 col-form-label">Employee Status</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="employee_status" name="employee_status" placeholder="Enter your employee status" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="work_phone" class="col-sm-4 col-form-label">Work Phone</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="work_phone" name="work_phone" placeholder="Enter your work phone" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="experience" class="col-sm-4 col-form-label">Experience</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="experience" name="experience" placeholder="Enter your experience" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="username" class="col-sm-4 col-form-label">Username</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="password" class="col-sm-4 col-form-label">Password</label>
+                                        <div class="col-sm-8">
+                                            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-block mb-4" value="Register">
+                        </form>
+                        <hr>
+                        <p class="mb-2">Already have an account? <a href="signin" class="f-w-400">Signin</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- [ auth-signup ] end -->
+
+    <!-- Required Js -->
+    <script src="static/js/vendor-all.min.js"></script>
+    <script src="static/js/plugins/bootstrap.min.js"></script>
+
+    <script src="static/js/pcoded.min.js"></script>
+</body>
+
+</html>
